@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration</title>
+      <link rel="stylesheet" href="Registration.css">
+    
+  </head>
+  <body>
+  <h2>Registration Form</h2>
+    <form action="register" method="post">
+      <label>Username</label>
+      <input type="text" name="username" placeholder="Username" />
+      <br /><br />
+            <label>Email</label>
+      <input type="email" name="email" placeholder="Email" />
+      <br /><br />
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Password" />
+      <br /><br />
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" required>Male
+      <input type="radio" name="gender" value="female" required>Female
+      <input type="radio" name="gender" value="other" required>Others <br /><br />
+      <label>Role:</label>
+      <input type="radio" name="role" value="admin" >Administrator
+      <input type="radio" name="role" value="customer" >Customer <br /><br />
+      <label>Address:</label>
+      <textarea name="address"> </textarea>
+      <br /><br />
+     <input type="submit" value="REGISTER">
+      <div class="text">
+        <h3>Already have an account? <a th:href="@{/Login}">Login now</a></h3>
+      </div>
+    </form>
+  </body>
+</html>
+  -->
+  <!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="Registration.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Registration Form</h2>
+      <form action="register" method="post">
+        <div class="input-field">
+          <label>Username</label>
+          <input type="text" name="username" placeholder="Username" required />
+        </div>
+        <div class="input-field">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Email" required />
+</div>        <div class="input-field">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Password" required />
+        </div>
+        <div class="input-field1">
+          <label>Gender:</label>
+          
+ <div class="radio-container">Male<input type="radio" name="gender" value="male" required>
+Female<input type="radio" name="gender" value="female" required> 
+Others<input type="radio" name="gender" value="other" required> 
+        </div> </div>
+        <div class="input-field1">
+          <label>Role:</label>
+           <div class="radio-container">
+         Administrator <input type="radio" name="role" value="admin" required>
+Customer <input type="radio" name="role" value="customer" required>
+        </div> </div>
+        <div class="input-field2">
+          <label>Address:</label>
+          <textarea name="address" required></textarea>
+        </div>
+        <button type="submit">REGISTER</button>
+        <div class="register">
+          <h3>Already have an account? <a th:href="@{/Login}"> Login</a></h3>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+  

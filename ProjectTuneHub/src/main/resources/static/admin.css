@@ -1,0 +1,64 @@
+body {
+  font-family: "Times New Roman", serif;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;  
+    height: 100vh;
+    margin: 0;
+      background: linear-gradient(180deg, red 20%, white 20% 100%);
+    
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh; /* adjust the height to your liking */
+  margin-bottom: 2rem; /* add some space between the title and the buttons */
+}
+
+.s {
+  color: black;
+  animation: slide-in 1s ease-out;
+}
+
+.ss {
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 15%;
+  justify-content: space-around;
+}
+
+input[type="submit"] {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
